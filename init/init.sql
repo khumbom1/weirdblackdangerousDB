@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS poems(
  constraint pk_example primary key (id) 
 );
 
-CREATE TABLE drawings (
+CREATE TABLE IF NOT EXISTS drawings (
     id INT AUTO_INCREMENT PRIMARY KEY,
     image_name VARCHAR(255),
     image_type VARCHAR(20),
